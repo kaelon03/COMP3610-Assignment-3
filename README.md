@@ -30,3 +30,25 @@ This project processes and analyzes the [Amazon Reviews 2023](https://huggingfac
 - details (dict): Product details (materials, brand, sizes, etc.)
 - parent asin (str): Parent ID of the product
 - bought together (list): Bundles or recommended items often bought together
+
+## 📓 Notebook Catalog
+1. **Data Gathering**\
+   **Purpose**: Download andprepate raw Amazon reviw Data\
+   **Features:**
+     * Batched downloading from Hugging Face
+     * Compression and validation
+2. **Merging**\
+   **Purpose:** Join raw review and product metadata\
+   **Operations:**
+     * Merging of Review and product
+     * Storage as compressed parquet file
+3. **EDA** \
+   **Analyses**:
+     * Rating Distribution over yime
+     * Brad and Category popularity
+     * Review length vs Score 
+4. **KMeansClustering**
+5. **Binary Review Sentiment Predictor**
+   * **Model:** Logistic Regression
+   * **Performace:**\
+   Accuracy: 86.7% │ F1: 91.9% 
